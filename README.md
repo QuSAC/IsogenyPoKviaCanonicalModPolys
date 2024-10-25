@@ -1,5 +1,5 @@
 # IsogenyPoKviaCanonicalModPolys
-Sage scripts for the paper "More Efficient Isogeny Proofs of Knowledge via Canonical Modular Polynomials" ([ADDLINKHERE])
+Sage scripts for the paper "More Efficient Isogeny Proofs of Knowledge via Canonical Modular Polynomials" ([ePrint: 2024/1738](https://eprint.iacr.org/2024/1738))
 
 -  The script `constraints.sage` expresses and verifies all arithmetizations; furthermore it automatically counts the number of constraints, variabls and non-zero entries.
 -  The script `kernel_polynomials.sage` verifies the computational claims in the proof of the Reconstruction Theorem.
