@@ -65,6 +65,11 @@ for l in [2,3,5,7,13]:
         t_1 = x^4 - 2*A*x^2 - 8*B*x + A^2
         t_2 = 4*x^3 + 4*A*x + 4*B
 
+        # Confirm that the polynomials t_1(f) and t_2(f) will be coprime,
+        # since they have non-zero constant coefficients and can be combined
+        # to a polynomial of the form c*x with non-zero coefficient c
+        assert (-1/(3*A)*x + B/A^2) * t_1 + (1/(3*A)*x^2 - B/A^2*x - 1)/4 * t_2 == E.discriminant()/(16*3*A^2) * x
+
         # Define the polynomial h_ell by evaluating phi_ell at t_1/t_2
         eval_quot = kernel_poly(t_1/t_2)
 
