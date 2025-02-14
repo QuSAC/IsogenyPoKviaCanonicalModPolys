@@ -162,7 +162,7 @@ for l in [2,3,5,7,13]:
         assert max_prime[l] > max([p for (p,e) in j1.factor()])
 
 
-    # Finally, check that the degree sum of distinct irreducible factors of the resultant
+    # Finally, check that the degree sum of distinct irreducible factors of the J_1-resultant
     # of Phi_ell(J_0,J_1) with its J_1-derivative is bounded above by ell^2 + 1
     assert sum([R(h).degree() for (h,e) in Class.resultant(Class.derivative(J1), variable=J1).factor()]) <= l^2 + 1
 

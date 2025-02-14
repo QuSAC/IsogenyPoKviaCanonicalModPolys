@@ -57,8 +57,8 @@ for l in [2,3,5,7,13]:
     # Confirm that phi_ell(f) defines a kernel polynomial
     if l == 2:
         # For ell = 2, check that the unique root will be 2-torsion
-        rho = -kernel_poly(x=0)
-        assert rho^3 + A*rho + B == 0
+        xi = -kernel_poly(x=0)
+        assert xi^3 + A*xi + B == 0
 
     else:
         # For ell >= 3, define the rational representation of [2]
@@ -98,10 +98,10 @@ for l in [2,3,5,7,13]:
     b_6 = 4*B
     n = deg
 
-    # Compute values t and w in the even degree case (note that here we have rho from before) ...
+    # Compute values t and w in the even degree case (note that here we have xi from before) ...
     if l == 2:
-        t = 3*rho^2 + A
-        w = rho*t
+        t = 3*xi^2 + A
+        w = xi*t
 
     # ... and in the odd degree case
     if l >= 3:
